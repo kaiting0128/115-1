@@ -1,13 +1,11 @@
 #include <stdio.h>
 int main()
 {
-    float a;
-    float b;
-    float c;
-    printf("請輸入三角形的底(cm):");
-    scanf("%f",&a);
-    printf("請輸入三角形的高(cm):");
-    scanf("%f",&b);
-    printf("三角形面積為:%.2f",c=a*b/2);
+    int s=5;
+    int p=1<<2;
+    int o=1<<3;
+    printf("停車場的權限：%d\n",p);
+    printf("學生有無停車場權限：%d\n",s&p);
+    printf("學生有無老師辦公室權限：%d\n",s&o);
     return 0;
 }
